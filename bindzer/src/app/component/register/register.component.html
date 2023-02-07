@@ -1,0 +1,19 @@
+<div style="width: 100%; height: 100%; display: flex;">
+
+<div class="register-box">
+  <h1>Register</h1>
+  <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="email">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" [(ngModel)]="password">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Confirm password</mat-label>
+    <input matInput type="password" [(ngModel)]="confirmPassword">
+  </mat-form-field>
+  <button mat-raised-button color="primary" class="button" [ngClass]="{disable: email == '' || password == '' || confirmPassword == ''}" (click)="register()">Register</button>
+<span class="link-box"> Have an account? <span class="link" [routerLink]="['/login']">Login</span> </span>
+</div>

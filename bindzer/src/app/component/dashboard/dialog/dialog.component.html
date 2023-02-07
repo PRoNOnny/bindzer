@@ -1,0 +1,30 @@
+<div class="title-container" >
+  <span class="title">{{ data.title }}</span>
+  <span class="material-icons icons" (click)="toClose()">close</span>
+</div>
+
+<div class="form-container">
+  <form [formGroup]="productForm">
+    <div class="line">
+      <img *ngIf="imageURL != ''" class="picture" [src]="imageURL" [alt]="productForm.value.picture">
+      <label *ngIf="imageURL == ''" class="picture" for="picture__input" tabIndex="0">
+        <span class="picture__image"></span>
+      </label>
+      <input type="file" name="picture__input" id="picture__input" formControlName="picture" (change)="selectFile($event)">
+    </div>
+    <div class="line">
+      <span>Name</span>
+      <input class="input-form w-input" type="text" autocomplete="off" formControlName="name" />
+    </div>
+    <div class="line">
+      <span>Price</span>
+      <input class="input-form w-input" type="text" autocomplete="off" onlyNumber formControlName="price" />
+    </div>
+  </form>
+</div>
+
+<div class="button-container">
+  <button class="comfirm-button" style="background-color: red;" (click)="resetForm()">Reset</button>
+  <button class="comfirm-button" [ngClass]="{disable: this.productForm.invalid}" (click)="addproduct()">Confirm</button>
+</div>
+

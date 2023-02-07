@@ -1,0 +1,100 @@
+.navbar {
+  height: 3rem;
+  background: cadetblue;
+  border-bottom: 1px solid gray;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.icon-container {
+  display: flex;
+  gap: .5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  line-height: 3rem;
+  cursor: pointer;
+  color: white;
+}
+
+.icon:hover {
+  font-weight: 600;
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: white;
+  cursor: default;
+}
+
+.container {
+  border: 1px solid gainsboro;
+  height: 80%;
+  margin: 2rem;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  overflow: overlay;
+  border-radius: 5px;
+  background: aliceblue;
+}
+
+
+.card {
+  min-width: 17rem;
+  max-width: 20rem;
+  max-height: 23rem;
+  min-height: 23rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem 0;
+  background: white;
+}
+
+.picture {
+  display: block;
+  width: auto;
+  height: 15rem;
+}
+
+.text {
+  margin: 0 10%;
+  font-weight: 600;
+  color:gray
+}
+
+::ng-deep.input {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 0 .5rem;
+  color: gray;
+  border: 1px solid azure;
+}
+
+::ng-deep.input-table {
+  line-height: 1.5rem;
+  border-radius: 5px;
+  padding: 0 .5rem;
+  color: gray;
+  border: 1px solid silver;
+  width: 1rem;
+  text-align: center;
+}
+
+::ng-deep.input-table:focus{
+  outline: none;
+  border: 1px solid gray;
+  color: darkslategray;
+}
+
+::ng-deep.input:focus {
+  outline: none;
+}

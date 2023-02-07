@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bindzer": {
+      "hosting": {
+        "bindzer": [
+          "bindzer"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bindzer"
+  }
+}

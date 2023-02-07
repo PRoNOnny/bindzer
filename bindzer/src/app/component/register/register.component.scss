@@ -1,0 +1,41 @@
+.register-box{
+  background: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 20vw;
+  min-width: 15rem;
+  height: 40vh;
+  min-height: 25rem;
+  margin: auto;
+  display: inline-flex;
+  padding: 0 2rem;
+  flex-direction: column;
+}
+
+.button {
+  margin-top: 1rem;
+}
+
+.link-box{
+  margin-top: .5rem;
+  font-size: 14px;
+}
+
+.link{
+  color: gray;
+}
+
+.link:hover{
+  color: black;
+  // font-weight: 600;
+  cursor: pointer;
+}
+
+.disable{
+  pointer-events: none;
+  opacity: .5;
+}
+
+::ng-deep.mat-form-field-wrapper {
+  padding-bottom: 0.5em;
+}
