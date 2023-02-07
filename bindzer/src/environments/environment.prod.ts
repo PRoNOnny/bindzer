@@ -10,5 +10,15 @@ export const environment = {
     messagingSenderId: '414938506685',
     measurementId: 'G-QJH1LELNZ7',
   },
+  sweetClass: {
+    title: 'title-sweet',
+    htmlContainer: 'html-sweet',
+    confirmButton: 'confirm-sweet',
+    cancelButton: 'cancel-sweet',
+    popup: 'popup-sweet',
+    closeButton: 'close-sweet',
+    icon: 'icon-sweet',
+    actions: 'action-sweet'
+  },
   production: true
 };
